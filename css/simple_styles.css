@@ -1,0 +1,123 @@
+/* main styles */
+
+header, body, footer {
+    color: #ded8d2;
+    font-family: 'Poiret One', serif;
+    background-color: black;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    color: #DAA520;
+    font-size: 1.5em;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+hr {
+    height: 30px;
+    border-style: solid;
+    border-color: #8c8b8b;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+
+hr:before {
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: #8c8b8b;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+/*Header*/
+
+.header {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+h1 {
+  font-size: 1.2em;
+  text-transform: uppercase;;
+}
+
+#logo {
+    width: 60%;
+    padding: 20px 0;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+    font-size: 1.2em;
+}
+
+#bugsy {
+    width: 35%;
+    float: left;
+    position: absolute;
+    left: 8%;
+    top: 3%;
+}
+
+#malone {
+    width: 40%;
+    float: right;
+    position: absolute;
+    right: 2%;
+    top: 3%;
+}
+
+#tuesday {
+    float: left;
+    position: absolute;
+    left: 8%;
+    bottom: 15%;
+    text-align: left;
+}
+
+
+#thursday {
+    float: right;
+    position: absolute;
+    right: 8%;
+    bottom: 15%;
+    text-align: right;
+}
+
+
+/*body*/
+
+.starring {
+  margin-bottom: 50px;
+}
+
+table {
+  margin: 0 auto;
+  text-align: left;
+  font-size: 1.2em;
+  margin-bottom: 30px
+}
+
+td {
+  padding: 10px 20px;
+}
+
+.ticketinfo {
+    color: #DAA520;
+    margin-bottom: 50px;
+}
+
+/*sparkles*/

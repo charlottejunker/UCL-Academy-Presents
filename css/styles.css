@@ -1,0 +1,269 @@
+* {
+  box-sizing: border-box;
+  transition-property: none;
+}
+
+/* main styles */
+
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+}
+
+header, body, footer {
+    color: #ded8d2;
+    font-family: 'Poiret One', serif;
+    background-color: black;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    color: #DAA520;
+    font-size: 2em;
+}
+
+#title, nav, footer {
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.container {
+  width: 65%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.container2 {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hr {
+  margin-top: 40px;
+}
+
+hr {
+    height: 30px;
+    border-style: solid;
+    border-color: #8c8b8b;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+
+hr:before {
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: #8c8b8b;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+.link, .link:visited {
+  text-decoration: none;
+  color: #DAA520;
+}
+
+span {
+  color: #DAA520;
+}
+/*Header*/
+#heading {
+  font-size: 1.4em;
+  margin: 18px auto 0 auto;
+  max-width: 80%;
+}
+
+h1 {
+  font-size: 1.2em;
+  text-transform: uppercase;;
+}
+
+#bugsy {
+    width: 100%;
+    margin: 20px 0;
+}
+
+/*nav*/
+#nav {
+  display: none;
+  padding-left: 0;
+}
+
+#nav li {
+    display: inline;
+    list-style: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid #DAA520;
+    padding: 3px;
+}
+
+#nav a, #nav a:visited {
+  font-size: 1.4em;
+  color: #ded8d2;
+  text-decoration: none;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+#nav a:hover, .selected {
+  color: #DAA520 !important;
+}
+/*alert*/
+#alert {
+  font-size: 1.7em;
+}
+
+
+
+/*dropdown styles*/
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 57%;
+    background-color: #000;
+}
+
+.dropdown-content a {
+    display: block;
+    text-align: left;
+    font-size: 1.1em !important;
+    text-transform: lowercase;
+    border-bottom: 1px solid #DAA520;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*hamburger styles*/
+
+#menu {
+  width:1.6em;
+	position: absolute;
+  top: 15px;
+  left:15px;
+	font-size:1.6em;
+  z-index: 100
+}
+
+#menu:hover {
+  cursor: pointer;
+}
+
+
+
+/*body*/
+
+p, li, table {
+  font-size: 1.2em;
+}
+
+table {
+  margin: 0 auto;
+  text-align: left;
+  margin-bottom: 30px
+}
+
+td {
+  padding: 10px 20px;
+}
+
+.ticketinfo {
+    color: #DAA520;
+}
+
+
+/*logos*/
+
+.logo {
+  width: 15%;
+  position: absolute;
+  top: 210px;
+}
+
+#logo-lhs {
+  left: 0;
+}
+
+#logo-rhs {
+  right: 0;
+}
+
+/*footer*/
+
+footer {
+  font-size: .8em;
+}
+
+
+/*about page*/
+
+#starring {
+  line-height: 1.8em;
+  list-style:none;
+  padding-left: 0;
+}
+
+/*tickets page*/
+
+#tickets {
+  font-size: 1.5em;
+}
+
+#ticket-instructions {
+  margin-top: 40px;
+}
+
+#ticket-instructions ol {
+  text-align: left;
+  margin: 40px 0 ;
+}
+
+#ticket-instructions li {
+  padding-left: 1em;
+}
+
+/*making of*/
+
+.disclose-heading:hover {
+  cursor: pointer;
+}
+.disclose-content {
+  display: none;
+}
+
+/*larger than 768 - no hamburger nav*/
+
+@media screen and (min-width: 768px) {
+	#menu {
+		display: none;
+	}
+
+  #nav {
+    display: inline-block;
+    margin: 20px 0;
+  }
+
+  #nav li {
+    border: none;
+  }
